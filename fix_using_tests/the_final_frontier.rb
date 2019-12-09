@@ -11,8 +11,10 @@ def crew
   ["Geordi", "Data", "Worf", "William", "Beverly", "Deanna"]
 end
 
-def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+def greet_crew(crew)
+  result = []
+  crew.each {|crew_member| result.push("Hello #{crew_member}.")}
+  result
 end
 
 def engage
